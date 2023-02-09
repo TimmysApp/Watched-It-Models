@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct SearchableUser: Codable {
+public struct SearchableUser: SendableContent {
     public var username: String?
     public var email: String?
     public var id: UUID?

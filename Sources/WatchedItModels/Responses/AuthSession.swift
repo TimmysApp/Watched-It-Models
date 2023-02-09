@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct AuthSession: Codable {
+public struct AuthSession: SendableContent {
+    public var id = UUID()
     public var token: String
     public var refreshToken: String?
     public var tokenExpiry: Double

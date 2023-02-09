@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct UserCredentials: Codable {
+public struct UserCredentials: SendableContent {
+    public var id = UUID()
     public var email: String
     public var password: String
     public var device: String?

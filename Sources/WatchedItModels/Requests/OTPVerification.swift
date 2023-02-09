@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct OTPVerification: Codable {
+public struct OTPVerification: SendableContent {
+    public var id = UUID()
     public var email: String
     public var otp: String
     public init(email: String, otp: String) {

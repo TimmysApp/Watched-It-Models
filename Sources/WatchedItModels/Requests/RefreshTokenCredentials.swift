@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct RefreshTokenCredentials: Codable {
+public struct RefreshTokenCredentials: SendableContent {
+    public var id = UUID()
     public var refreshToken: String
     public init(refreshToken: String) {
         self.refreshToken = refreshToken
