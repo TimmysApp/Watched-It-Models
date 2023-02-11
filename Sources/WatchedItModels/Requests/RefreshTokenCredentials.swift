@@ -13,4 +13,7 @@ public struct RefreshTokenCredentials: SendableContent {
     public init(refreshToken: String) {
         self.refreshToken = refreshToken
     }
+    enum CodingKeys: CodingKey {
+        case refreshToken
+    }
 }

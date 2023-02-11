@@ -19,4 +19,7 @@ public struct AuthSession: SendableContent {
         self.tokenExpiry = tokenExpiry.timeIntervalSince1970
         self.refreshTokenExpiry = refreshTokenExpiry?.timeIntervalSince1970
     }
+    enum CodingKeys: CodingKey {
+        case token, refreshToken, tokenExpiry, refreshTokenExpiry
+    }
 }

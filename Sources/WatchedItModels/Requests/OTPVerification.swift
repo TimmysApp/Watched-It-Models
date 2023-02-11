@@ -15,4 +15,7 @@ public struct OTPVerification: SendableContent {
         self.email = email
         self.otp = otp
     }
+    enum CodingKeys: CodingKey {
+        case email, otp
+    }
 }

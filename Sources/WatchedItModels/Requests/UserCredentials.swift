@@ -17,4 +17,7 @@ public struct UserCredentials: SendableContent {
         self.password = password
         self.device = device
     }
+    enum CodingKeys: CodingKey {
+        case email, password, device
+    }
 }
