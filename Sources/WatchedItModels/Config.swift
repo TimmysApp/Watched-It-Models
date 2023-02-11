@@ -9,6 +9,9 @@ import Foundation
 
 typealias SendableContent = Codable & Equatable & Hashable & Identifiable
 
-public enum Actions: Int {
+public enum Actions: Int, SendableContent {
     case shouldVerify
+    public var id: Int {
+        return rawValue
+    }
 }
