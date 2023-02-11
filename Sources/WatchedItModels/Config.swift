@@ -8,3 +8,7 @@
 import Foundation
 
 typealias SendableContent = Codable & Equatable & Hashable & Identifiable
+
+public enum Actions: Int {
+    case shouldVerify
+}
